@@ -223,7 +223,7 @@
 
     $(".video-btn").magnificPopup({
         items: {
-            src: "https://www.youtube.com/watch?v=j0hcRDypgmY"
+            src: "https://www.youtube.com/watch?v=kZpeWGE44Ds"
         },
         type: "iframe",
         iframe: {
@@ -236,7 +236,7 @@
                 youtube: {
                     index: "youtube.com/",
                     id: "v=",
-                    src: "//www.youtube.com/embed/j0hcRDypgmY"
+                    src: "//www.youtube.com/embed/kZpeWGE44Ds"
                 }
             },
             srcAction: "iframe_src"
