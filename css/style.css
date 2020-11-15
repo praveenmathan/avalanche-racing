@@ -551,6 +551,10 @@ ol {
 /*---------------------
   Hero
 -----------------------*/
+.hero__text {
+	padding: 25px;
+	background: #fff;
+}
 
 .hero__slider.owl-carousel .owl-item.active .hero__text h6 {
 	top: 0;
@@ -598,7 +602,6 @@ ol {
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	margin-bottom: 28px;
 	position: relative;
 	top: 100px;
 	opacity: 0;
@@ -4092,4 +4095,9 @@ sup {
 .school ul li.button-holder {
 	padding-top: 24px;
     padding-bottom: 60px;
+}
+
+.slider-nav-bg {
+	background: #fff;
+	padding: 5px;
 }
