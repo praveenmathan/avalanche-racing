@@ -593,7 +593,7 @@ ol {
 
 .hero__items {
 	height: 800px;
-	padding-top: 300px;
+	padding-top: 275px;
 }
 
 .hero__text h6 {
@@ -2159,7 +2159,7 @@ ol {
 }
 
 .story-mission-container {
-	background: #EFEFEF;
+	background: #fff;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -3914,7 +3914,7 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 }
 
 .play-video-wrapper {
-	padding: 20%;
+	padding: 15%;
     background: #fff;
 }
 
@@ -3948,7 +3948,15 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 	padding: 60px 0px;
 }
 
-.inner-page-header-wrapper h6, .join-us-content-header h6, .academic-content-header h6 {
+.section-header {
+	padding: 5% 0;
+}
+
+.section-header-wrapper {
+
+}
+
+.inner-page-header-wrapper h6, .join-us-content-header h6, .academic-content-header h6, .section-header-wrapper h6{
 	color: #e53637;
 	font-size: 14px;
 	font-weight: 700;
@@ -3980,7 +3988,7 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
     position: relative;
 }
 
-.inner-page-header-wrapper h2 {
+.inner-page-header-wrapper h2, .section-header-wrapper h2 {
 	font-family: 'Rajdhani', sans-serif;
 	color: #333333;
 	font-size: 70px;
