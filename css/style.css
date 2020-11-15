@@ -316,7 +316,7 @@ ol {
 -----------------------*/
 
 .header {
-	background: transparent;
+	background: #ffffff;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -593,7 +593,7 @@ ol {
 
 .hero__items {
 	height: 800px;
-	padding-top: 275px;
+	padding-top: 300px;
 }
 
 .hero__text h6 {
@@ -612,9 +612,9 @@ ol {
 
 .hero__text h2 {
 	color: #111111;
-	font-size: 38px;
+	font-size: 30px;
 	font-weight: 700;
-	line-height: 50px;
+	line-height: 40px;
 	margin-bottom: 30px;
 	position: relative;
 	top: 100px;
@@ -653,7 +653,6 @@ ol {
 }
 
 .hero__social {
-	margin-top: 190px;
 }
 
 .hero__social a {
@@ -1950,7 +1949,7 @@ ol {
 
 .footer {
 	background: #EFEFEF;
-    padding: 25px 0px;
+    padding: 40px 0px 20px 0px;
 }
 
 .footer__about {
