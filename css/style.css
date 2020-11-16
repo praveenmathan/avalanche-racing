@@ -142,6 +142,10 @@ ol {
 	padding-bottom: 100px;
 }
 
+.spad-announcements {
+	padding-bottom: 100px;
+}
+
 .text-white h1,
 .text-white h2,
 .text-white h3,
@@ -3936,7 +3940,14 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 .inner-page-header-bg {
 	width: 100%;
 	height: 500px;
-	background: #f5f5f5;
+}
+
+.academy-bg {
+	background: url('../img/bg/academy-bg.jpg');
+}
+
+.join-us-bg {
+	background: url('../img/bg/join-us-bg.jpg');
 }
 
 .inner-page-header-wrapper {
@@ -3987,7 +3998,13 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
     position: relative;
 }
 
-.inner-page-header-wrapper h2, .section-header-wrapper h2 {
+.inner-page-header-wrapper h2 {
+	font-family: 'Rajdhani', sans-serif;
+	color: #ffffff;
+	font-size: 70px;
+}
+
+.section-header-wrapper h2 {
 	font-family: 'Rajdhani', sans-serif;
 	color: #333333;
 	font-size: 70px;
@@ -4123,4 +4140,18 @@ sup {
     width: 0.75rem;
     margin-right: 0.5rem;
     background-color: #bdbdbd;
+}
+
+.announcement-wrapper {
+	width: 100%;
+	height: auto;
+	background-color: #2f315a;
+	color: #ffffff;
+}
+
+table {
+	width: 100%;
+    padding: 0 50px 0 50px;
+    border-collapse: separate;
+    border-spacing: 0px 30px;
 }
