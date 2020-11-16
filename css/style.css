@@ -4108,3 +4108,19 @@ sup {
 	background: #fff;
 	padding: 5px;
 }
+
+.bullets li {
+	margin: 0;
+    padding: 10px 10.5% !important;
+}
+
+.bullets li::before {
+	display: inline-block;
+    content: '';
+    -webkit-border-radius: 0.375rem;
+    border-radius: 0.375rem;
+    height: 0.75rem;
+    width: 0.75rem;
+    margin-right: 0.5rem;
+    background-color: #bdbdbd;
+}
