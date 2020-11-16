@@ -980,7 +980,7 @@ ol {
 }
 
 .product__item:hover .product__item__text h6 {
-	opacity: 0;
+	opacity: 1;
 }
 
 .product__item:hover .product__item__text .product__color__select {
@@ -1876,7 +1876,6 @@ ol {
 	border-bottom: 1px solid #e5e5e5;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
-	justify-content: center;
 }
 
 .product__details__tab .nav-tabs .nav-item {
@@ -3987,7 +3986,7 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 	transition: all, 0.3s;
 }
 
-.join-us-content-header h2 {
+/* .join-us-content-header h2 {
 	color: #111111;
     font-size: 25px;
     font-weight: 700;
@@ -3995,13 +3994,13 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 	margin-top: 10px;
     margin-bottom: 30px;
     position: relative;
-}
+} */
 
-.academic-content-header h2 {
+.academic-content-header h2, .join-us-content-header h2 {
 	color: #111111;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
-	line-height: 40px;
+	line-height: 30px;
 	margin-top: 10px;
     margin-bottom: 60px;
     position: relative;
@@ -4188,7 +4187,7 @@ table {
 	text-align: center;
     padding: 8px;
 	color: #fff;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .on-track-content p {
@@ -4201,21 +4200,46 @@ table {
 .announcements {
 	position: relative;	
 }
-.announcements div {
-	background: #2f315a;
-	width: 250px;
+.announcements a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ffffff;
+	width: 280px;
 	height: auto;
 	position: absolute;	
 	right: 0;
 	bottom: 20px;
-	padding: 10px 10px;
+	padding: 15px 10px;
+	border: 1px solid #000;
+}
+.announcements .strip-content {
+
 }
 .announcements h2 {
-	font-size: 18px;
-	color: #ffffff;
+	font-size: 15px;
+	color: #222;
 }
-
+.arrow {
+	padding: 5px;
+	margin-left: 10px;
+}
+.arrow span {
+	color: #000;
+	font-size: 32px;
+}
 .announcements h6 {
 	font-size: 12px;
-	color: #ffffff;
+	color: #222;
+}
+.management-wrapper {
+	width: 100%;
+	background: #2f315a;
+	padding: 60px 25px;
+}
+.management-content p {
+    color: #fff;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 40px;
 }
