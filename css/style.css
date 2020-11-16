@@ -138,6 +138,11 @@ ol {
 }
 
 .spad {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.spad-home {
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
@@ -3958,6 +3963,10 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 	padding: 60px 0px;
 }
 
+.partners-content-wrapper {
+	padding: 60px 0px 0px;
+}
+
 .section-header {
 	padding: 5% 0;
 }
@@ -4154,4 +4163,59 @@ table {
     padding: 0 50px 0 50px;
     border-collapse: separate;
     border-spacing: 0px 30px;
+}
+
+.on-track-wrapper, .off-track-wrapper {
+	width: 100%;
+}
+
+.on-track-header h2, .off-track-header h2 {
+	text-align: center;
+    padding: 2%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.on-track-header h2 {
+    color: #2f315a;
+}
+
+.off-track-header h2 {
+	color: #a3555a;
+}
+
+.on-track-content p, .off-track-content p {
+	text-align: center;
+    padding: 8px;
+	color: #fff;
+	font-size: 18px;
+}
+
+.on-track-content p {
+	background: #2f315a;
+}
+
+.off-track-content p {
+	background: #a3555a;
+}
+.announcements {
+	position: relative;	
+}
+.announcements div {
+	background: #2f315a;
+	width: 250px;
+	height: auto;
+	position: absolute;	
+	right: 0;
+	bottom: 20px;
+	padding: 10px 10px;
+}
+.announcements h2 {
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.announcements h6 {
+	font-size: 12px;
+	color: #ffffff;
 }
