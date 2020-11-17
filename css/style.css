@@ -4254,3 +4254,14 @@ table {
 .card {
 	background: #efefef;
 }
+.partners-bg {
+	background: url('../img/bg/partners-bg.jpg');
+}
+
+.gallery-bg {
+	background: url('../img/bg/gallery-bg.jpg');
+}
+
+.team-bg {
+	background: url('../img/bg/teams-bg.jpg');
+}
