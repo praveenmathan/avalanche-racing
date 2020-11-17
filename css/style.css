@@ -326,7 +326,7 @@ ol {
 
 .header {
 	background: #ffffff;
-	position: absolute;
+	position: relative;
 	top: 0;
 	width: 100%;
 	z-index: 2;
@@ -492,12 +492,13 @@ ol {
 }
 
 .header__menu ul li a {
-	font-size: 18px;
-	color: #111111;
-	display: block;
-	font-weight: 600;
-	position: relative;
-	padding: 3px 0;
+	font-size: 14px;
+    color: #111111;
+    display: block;
+    font-weight: bold;
+    position: relative;
+    padding: 3px 0;
+    text-transform: uppercase;
 }
 
 .header__menu ul li a:after {
@@ -1957,6 +1958,11 @@ ol {
 
 .footer {
 	background: #EFEFEF;
+    padding: 40px 0px 20px 0px;
+}
+
+.footer-white {
+	background: #ffffff;
     padding: 40px 0px 20px 0px;
 }
 
@@ -3968,6 +3974,10 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 
 .section-header {
 	padding: 5% 0;
+}
+
+.section-header-less-top {
+	padding : 2% 0 5%;
 }
 
 .section-header-wrapper {
