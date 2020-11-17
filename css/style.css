@@ -4054,7 +4054,7 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
     display: inline-block;
     width: 100%;
     vertical-align: middle;
-    background-color: #fff;
+    background-color: #efefef;
     border: 1px solid #e5e5e5;
     border-radius: 2px;
     -webkit-box-sizing: border-box;
@@ -4209,7 +4209,7 @@ table {
 	height: auto;
 	position: absolute;	
 	right: 0;
-	bottom: 20px;
+	bottom: 5px;
 	padding: 15px 10px;
 	border: 1px solid #000;
 }
@@ -4219,6 +4219,7 @@ table {
 .announcements h2 {
 	font-size: 15px;
 	color: #222;
+	font-weight: bold;
 }
 .arrow {
 	padding: 5px;
@@ -4240,6 +4241,16 @@ table {
 .management-content p {
     color: #fff;
     text-align: justify;
-    font-size: 18px;
-    line-height: 40px;
+    font-size: 17px;
+    line-height: 30px;
+}
+.management-content h2, .management-content h6 {
+	color: #ffffff;
+    font-weight: bold;
+}
+.management-content h6 {
+	margin-bottom: 25px;
+}
+.card {
+	background: #efefef;
 }
