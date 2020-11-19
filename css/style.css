@@ -326,11 +326,11 @@ ol {
 -----------------------*/
 
 .header {
-	background: #ffffff;
-	position: relative;
-	top: 0;
-	width: 100%;
-	z-index: 2;
+	background: #001e3c;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 .header__top {
@@ -494,7 +494,7 @@ ol {
 
 .header__menu ul li a {
 	font-size: 14px;
-    color: #111111;
+    color: #fff;
     display: block;
     font-weight: bold;
     position: relative;
@@ -3950,7 +3950,7 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 
 .inner-page-header-bg {
 	width: 100%;
-	height: 500px;
+	height: 400px;
 }
 
 .academy-bg {
@@ -3959,10 +3959,11 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 
 .join-us-bg {
 	background: url('../img/bg/join-us-bg.jpg');
+	background-size: cover;
 }
 
 .inner-page-header-wrapper {
-	padding-top: 250px;
+	padding-top: 150px;
 }
 
 .join-us-content-wrapper {
@@ -4283,21 +4284,25 @@ table {
 }
 
 .track-section {
-	background: #2f315a;
+	background: #efefef;
     padding: 30px 30px 60px;
     text-align: center;
 }
 
+.track-content {
+	text-align: left;
+    padding: 0px 30px;
+}
+
 .track-content ul li {
-	list-style: none;
 	padding: 8px;
-    color: #fff;
+    color: #000;
     font-size: 20px;
 }
 
 .track-header h2 {
 	font-family: 'Rajdhani', sans-serif;
-    color: #ffffff;
+    color: #000;
 	font-size: 30px;
 	padding: 30px;
 }
@@ -4340,4 +4345,8 @@ table {
 
 .pb-50 {
 	padding-bottom: 50px;
+}
+
+.white-bg {
+	background: #efefef;
 }
