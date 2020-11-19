@@ -32,9 +32,10 @@
 
 html,
 body {
-	height: 100%;
+	min-height: 100%;
 	font-family: "Nunito Sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
+	background: linear-gradient(0deg, rgba(47,49,90,1) 0%, rgba(0,3,52,1) 100%);;
 }
 
 h1,
@@ -2168,7 +2169,7 @@ ol {
 -----------------------*/
 
 .testimonial {
-	background: #ffffff;
+	background: transparent;
 }
 
 .story-mission-container {
@@ -2192,7 +2193,7 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 }
 
 .story-mission-center-container {
-	background: #2f315a;
+	background: #000334;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -4024,7 +4025,7 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 
 .section-header-wrapper h2 {
 	font-family: 'Rajdhani', sans-serif;
-	color: #333333;
+	color: #ffffff;
 	font-size: 70px;
 }
 
@@ -4318,4 +4319,8 @@ table {
 .h3-responsive {
 	font-size: 20px;
     background: #fff;
+}
+
+.gradient-background {
+	background : linear-gradient(0deg, rgba(47,49,90,1) 0%, rgba(0,3,52,1) 100%);
 }
