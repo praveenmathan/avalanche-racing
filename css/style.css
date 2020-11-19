@@ -4337,3 +4337,7 @@ table {
     color: #fff;
     text-align: center;
 }
+
+.pb-50 {
+	padding-bottom: 50px;
+}
