@@ -326,7 +326,7 @@ ol {
 -----------------------*/
 
 .header {
-	background: #001e3c;
+	background: #000334;
     position: fixed;
     top: 0;
     width: 100%;
@@ -564,7 +564,7 @@ ol {
 -----------------------*/
 .hero__text {
 	padding: 10px;
-	background: #fff;
+	background: transparent;
 }
 
 .hero__slider.owl-carousel .owl-item.active .hero__text h6 {
@@ -622,10 +622,10 @@ ol {
 }
 
 .hero__text h2 {
-	color: #111111;
-	font-size: 20px;
+	color: #fff;
+	font-size: 30px;
 	font-weight: 700;
-	line-height: 30px;
+	line-height: 40px;
 	margin-bottom: 10px;
 	position: relative;
 	top: 100px;
@@ -949,7 +949,7 @@ ol {
 }
 
 .filter__controls li.active {
-	color: #111111;
+	color: #ffffff;
 }
 
 .product__item {
@@ -1011,25 +1011,26 @@ ol {
 
 .product__item__pic .product__hover {
 	position: absolute;
-	right: -200px;
-	top: 20px;
-	-webkit-transition: all, 0.8s;
-	-o-transition: all, 0.8s;
-	transition: all, 0.8s;
+    right: -200px;
+    bottom: 5px;
+    -webkit-transition: all, 0.8s;
+    -o-transition: all, 0.8s;
+    transition: all, 0.8s;
+    background: #2f315a;
+    padding: 10px;
 }
 
-.product__item__pic .product__hover li {
-	list-style: none;
-	margin-bottom: 10px;
+.product__item__pic .product__hover h6 {
 	position: relative;
+	color: #fff;
 }
 
-.product__item__pic .product__hover li:hover span {
+.product__item__pic .product__hover h6:hover span {
 	opacity: 1;
 	visibility: visible;
 }
 
-.product__item__pic .product__hover li span {
+.product__item__pic .product__hover h6 span {
 	color: #ffffff;
 	background: #111111;
 	display: inline-block;
@@ -1046,7 +1047,7 @@ ol {
 	transition: all, 0.3s;
 }
 
-.product__item__pic .product__hover li span:after {
+.product__item__pic .product__hover h6 span:after {
 	position: absolute;
 	right: -2px;
 	top: 5px;
@@ -1060,7 +1061,7 @@ ol {
 	z-index: -1;
 }
 
-.product__item__pic .product__hover li img {
+.product__item__pic .product__hover h6 img {
 	background: #ffffff;
 	padding: 10px;
 	display: inline-block;
@@ -1964,7 +1965,7 @@ ol {
 
 .footer-white {
 	padding: 40px 0px 20px 0px;
-	background-color: #001a30;
+	background-color: #000334;
     background-image: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(255,255,255,0.1) 100%);
 }
 
@@ -3964,7 +3965,7 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 }
 
 .inner-page-header-wrapper {
-	padding-top: 150px;
+	padding-top: 200px;
 }
 
 .join-us-content-wrapper {
@@ -4010,7 +4011,7 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 } */
 
 .academic-content-header h2, .join-us-content-header h2 {
-	color: #111111;
+	color: #efefef;
     font-size: 20px;
     font-weight: 700;
 	line-height: 30px;
@@ -4312,8 +4313,9 @@ table {
 	border-left: 1px solid #efefef;
 }
 
-.join-us-nav-link.active {
+.nav-link.active {
 	background-color: transparent !important;
+	color: #ffffff !important;
 }
 
 .join-us-list li {

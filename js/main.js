@@ -84,7 +84,7 @@
         Hero Slider
     ------------------------*/
     $(".hero__slider").owlCarousel({
-        loop: false,
+        loop: true,
         margin: 0,
         items: 1,
         dots: false,
@@ -95,7 +95,7 @@
         smartSpeed: 1200,
         autoHeight: false,
         autoWidth: false,
-        autoplay: false
+        autoplay: true
     });
 
     /*--------------------------
