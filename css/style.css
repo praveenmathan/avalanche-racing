@@ -4368,7 +4368,8 @@ table th {
 }
 
 table td {
-	padding: 10px;
-	background: #000334;
-	color: #fff;
+	padding: 15px 10px;
+    background: #000334;
+    color: #fff;
+    font-size: 19px;
 }
