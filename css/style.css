@@ -4171,14 +4171,6 @@ sup {
 	color: #ffffff;
 }
 
-table {
-	width: 100%;
-    padding: 0 50px 0 50px;
-    border-collapse: separate;
-	border-spacing: 0px 30px;
-	text-align: center;
-}
-
 .on-track-wrapper, .off-track-wrapper {
 	width: 100%;
 }
@@ -4356,4 +4348,27 @@ table {
 
 .bg-white {
 	background: #ffffff;
+}
+
+.whatsapp-image {
+	width:75%;
+}
+
+table {
+	width: 100%;
+	text-align: center;
+	background: #ffffff;
+}
+
+table th {
+	border: 1px solid #2f315a;
+	padding: 10px;
+	background: #000334;
+	color: #fff;
+}
+
+table td {
+	border: 1px solid #2f315a;
+	padding: 10px;
+    background: #f5f5f5;
 }
