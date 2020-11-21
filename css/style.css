@@ -4365,20 +4365,20 @@ table {
 }
 
 table th {
-	padding: 10px;
+	padding: 15px;
 	background: #000334;
 	color: #fff;
 	text-decoration: underline;
 	font-size: 19px;
-	padding-top: 20px;
 }
 
 table td {
-	padding: 10px;
+    padding: 15px;
     background: #000334;
     color: #fff;
-	font-size: 19px;
-	padding-bottom: 30px;
+    font-size: 19px;
+    /* padding-bottom: 30px; */
+    border: 1px solid #fff;
 }
 
 .fixed-header {
@@ -4391,6 +4391,10 @@ table td {
 
 .academy__items {
 	height: 500px;
+}
+
+.driver__items {
+	height: 300px;
 }
 
 .academy__slider.owl-carousel .owl-nav button {
@@ -4406,4 +4410,23 @@ table td {
 .academy__slider.owl-carousel .owl-nav button.owl-next {
 	left: auto;
 	right: 75px;
+}
+
+.driver__slider.owl-carousel .owl-nav {
+	display: block !important;
+}
+
+.driver__slider.owl-carousel .owl-nav button {
+	font-size: 36px;
+	color: #333333;
+	position: absolute;
+	left: -40px;
+	top: 50%;
+	margin-top: -18px;
+	line-height: 29px;
+}
+
+.driver__slider.owl-carousel .owl-nav button.owl-next {
+	left: auto;
+	right: -40px;
 }
