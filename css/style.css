@@ -326,11 +326,15 @@ ol {
 -----------------------*/
 
 .header {
-	background: #000334;
-    position: fixed;
+	position: absolute;
     top: 0;
     width: 100%;
-    z-index: 2;
+	z-index: 2;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000322+0,7db9e8+100&1+0,0+100 */
+	background: -moz-linear-gradient(top, rgba(0,3,34,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6-15 */	
+	background: -webkit-linear-gradient(top, rgba(0,3,34,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(0,3,34,1) 0%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000322', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
 }
 
 .header__top {
@@ -603,8 +607,8 @@ ol {
 }
 
 .hero__items {
-	height: 800px;
-	padding-top: 600px;
+	height: 700px;
+	padding-top: 480px;
 }
 
 .hero__text h6 {
@@ -4375,4 +4379,31 @@ table td {
     color: #fff;
 	font-size: 19px;
 	padding-bottom: 30px;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+	width: 100%;
+	background: #000334; 
+}
+
+.academy__items {
+	height: 500px;
+}
+
+.academy__slider.owl-carousel .owl-nav button {
+	font-size: 36px;
+	color: #333333;
+	position: absolute;
+	left: 75px;
+	top: 50%;
+	margin-top: -18px;
+	line-height: 29px;
+}
+
+.academy__slider.owl-carousel .owl-nav button.owl-next {
+	left: auto;
+	right: 75px;
 }
