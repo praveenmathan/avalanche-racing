@@ -4361,7 +4361,10 @@ sup {
 table {
 	width: 100%;
 	text-align: center;
-	background: #ffffff;
+	background: transparent;
+	border-collapse: separate;
+	border-spacing: 15px;
+	border: 10px solid #000334;
 }
 
 table th {
@@ -4377,8 +4380,6 @@ table td {
     background: #000334;
     color: #fff;
     font-size: 19px;
-    /* padding-bottom: 30px; */
-    border: 1px solid #fff;
 }
 
 .fixed-header {
