@@ -178,7 +178,7 @@ ol {
 	text-transform: uppercase;
 	padding: 14px 30px;
 	color: #ffffff;
-	background: #2f315a;
+	background: #001e3c;
 	letter-spacing: 4px;
 }
 
@@ -3998,7 +3998,7 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 
 .inner-page-header-wrapper h6, .join-us-content-header h6, .academic-content-header h6, .section-header-wrapper h6{
 	color: #e53637;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -4175,7 +4175,7 @@ sup {
 .announcement-wrapper {
 	width: 100%;
 	height: auto;
-	background-color: #2f315a;
+	background-color: transparent;
 	color: #ffffff;
 }
 
