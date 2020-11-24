@@ -4076,7 +4076,7 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
     display: inline-block;
     width: 100%;
     vertical-align: middle;
-    background-color: #efefef;
+    background-color: rgb(189, 195, 199);
     border: 1px solid #e5e5e5;
     border-radius: 2px;
     -webkit-box-sizing: border-box;
@@ -4169,7 +4169,7 @@ sup {
     height: 0.75rem;
     width: 0.75rem;
     margin-right: 0.5rem;
-    background-color: #bdbdbd;
+    background-color: #f5f5f5;
 }
 
 .announcement-wrapper {
@@ -4267,7 +4267,7 @@ sup {
 	margin-bottom: 25px;
 }
 .card {
-	background: #efefef;
+	background: rgb(189, 195, 199);
 }
 .partners-bg {
 	background: url('../img/bg/partners-bg.jpg');
