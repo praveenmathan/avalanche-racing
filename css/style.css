@@ -3988,6 +3988,10 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 	padding: 5% 0;
 }
 
+.section-header-less-pad {
+	padding: 2% 0;
+}
+
 .section-header-less-top {
 	padding : 2% 0 5%;
 }
