@@ -573,6 +573,7 @@ ol {
 .hero__text {
 	padding: 10px;
 	background: transparent;
+	z-index: 2;
 }
 
 .hero__slider.owl-carousel .owl-item.active .hero__text h6 {
@@ -1902,7 +1903,8 @@ ol {
 	color: #b7b7b7;
 	padding: 0;
 	border: none;
-	font-weight: 700;
+	font-weight: bold;
+	text-transform: uppercase;
 	padding-bottom: 10px;
 	border-bottom: 2px solid transparent;
 }
@@ -3963,6 +3965,11 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 	height: 400px;
 }
 
+.gallery-page-header-bg {
+	width: 100%;
+	height: 350px;
+}
+
 .academy-bg {
 	background: url('../img/bg/academy-bg.jpg');
 }
@@ -4450,4 +4457,13 @@ table td {
 
 .bg-fixed {
 	background: #001e3c;
+}
+.hero__items::before {
+	position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    content: ' ';
+	background: linear-gradient(to bottom, rgba(0,26,48,0), rgba(0,26,48,0.38) 24%, #001a30);
+	z-index: 0;
 }
