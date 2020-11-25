@@ -4002,7 +4002,7 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 
 .inner-page-header-wrapper h6, .join-us-content-header h6, .academic-content-header h6, .section-header-wrapper h6{
 	color: #e53637;
-	font-size: 18px;
+	font-size: 25px;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -4010,6 +4010,7 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 	-webkit-transition: all, 0.3s;
 	-o-transition: all, 0.3s;
 	transition: all, 0.3s;
+	font-family: 'Rajdhani', sans-serif;
 }
 
 /* .join-us-content-header h2 {
@@ -4118,8 +4119,8 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 }
 .school ul li.title-holder span.sub-title {
 	color: #e53637;
-	font-size: 14px;
-	font-weight: 700;
+	font-size: 16px;
+	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	position: relative;
@@ -4162,7 +4163,8 @@ sup {
 
 .bullets li {
 	margin: 0;
-    padding: 10px 10.5% !important;
+	padding: 10px 10.5% !important;
+	font-size: 18px;
 }
 
 .school li span {
@@ -4174,8 +4176,8 @@ sup {
     content: '';
     -webkit-border-radius: 0.375rem;
     border-radius: 0.375rem;
-    height: 0.75rem;
-    width: 0.75rem;
+	height: 10px;
+    width: 10px;
     margin-right: 0.5rem;
     background-color: #000;
 }
@@ -4392,7 +4394,8 @@ table td {
     padding: 15px;
     background: rgb(189, 195, 199);
     color: #000;
-    font-size: 19px;
+	font-size: 19px;
+	font-weight: bold;
 }
 
 .fixed-header {
