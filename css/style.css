@@ -4325,7 +4325,7 @@ sup {
 
 .track-section {
 	background: #efefef;
-    padding: 30px 30px 60px;
+    padding: 15px 30px 60px;
     text-align: center;
 }
 
@@ -4337,15 +4337,15 @@ sup {
 .track-content ul li {
     padding: 8px;
     color: #000;
-    font-size: 18px;
+    font-size: 17px;
     text-transform: uppercase;
 }
 
 .track-header h2 {
 	font-family: 'Rajdhani', sans-serif;
     color: #000;
-    font-size: 30px;
-    padding: 25px;
+    font-size: 35px;
+    padding: 15px;
     text-transform: uppercase;
 }
 
@@ -4413,9 +4413,9 @@ table {
 
 table th {
 	padding: 15px;
-	background: #fff;
-	color: #000;
-	font-size: 19px;
+    background: #001e3c;
+    color: #fff;
+    font-size: 19px;
 }
 
 table td {
