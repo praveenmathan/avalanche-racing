@@ -3350,12 +3350,14 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 
 .contact__text .section-title {
 	text-align: left;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 
 .contact__text .section-title h2 {
-	font-size: 48px;
+	font-size: 35px;
 	margin-bottom: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
 }
 
 .contact__text .section-title p {
@@ -3380,8 +3382,10 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 }
 
 .contact__text ul li p {
-	line-height: 27px;
-	margin-bottom: 0;
+	line-height: 35px;
+    margin-bottom: 0;
+    font-size: 25px;
+    color: #fff;
 }
 
 .contact__form input {
@@ -4074,10 +4078,7 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 }
 
 .box {
-	padding: 0 2% 2%;
-    background: #2f315a;
-    width: 100%;
-    height: auto;
+	height: 590px;
 }
 
 .red-box {
@@ -4325,8 +4326,9 @@ sup {
 
 .track-section {
 	background: #efefef;
-    padding: 15px 30px 60px;
-    text-align: center;
+    padding: 15px 30px 15px;
+	text-align: center;
+	height: 575px;
 }
 
 .track-content {
@@ -4337,7 +4339,7 @@ sup {
 .track-content ul li {
     padding: 8px;
     color: #000;
-    font-size: 17px;
+    font-size: 16px;
     text-transform: uppercase;
 }
 
