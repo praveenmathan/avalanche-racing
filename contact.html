@@ -101,17 +101,23 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="contact__form">
-                        <form action="#">
+                        <form method="post" id="contact-form" novalidate="novalidate">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <input type="text" placeholder="Name">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Name" name="name">
+                                    </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="text" placeholder="Email">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Phone Number" name="phonenumber">
+                                    </div>
                                 </div>
                                 <div class="col-lg-12">
-                                    <textarea placeholder="Message"></textarea>
-                                    <input type="button" class="primary-btn" value="Send Message" />
+                                    <div class="form-group">
+                                        <textarea placeholder="Message" name="message"></textarea>
+                                    </div>
+                                    <input type="submit" name="submit" class="primary-btn" name="submit" />
                                 </div>
                             </div>
                         </form>
@@ -165,7 +171,54 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function ($) {
+
+            $("#contact-form").validate({
+                rules: {
+                    name: "required",
+                    phonenumber: "required",
+                    message: "required"
+                },
+                messages: {
+                    name: "Please enter your Name",
+                    phonenumber: "Please enter your Number",
+                    message: "Please type your queries / message"
+                },
+                errorPlacement: function (error, element) {
+                    if (element.is(":radio")) {
+                        error.appendTo(element.parents('.form-group'));
+                    }
+                    else { // This is the default behavior 
+                        error.insertAfter(element);
+                    }
+                },
+                submitHandler: function (form) {
+                    event.preventDefault();
+                    $(form).load("submit", function (e)// Trigger Submit When Validation Done
+                    {
+                        console.log('form', form);
+                        console.log('data', FormData);
+                        var data = new FormData(form);
+                        $.ajax({
+                            url: "email/contact.php",
+                            type: "POST",
+                            data: data,
+                            cache: false,
+                            contentType: false,
+                            processData: false,
+                            success: function (data) {
+                                $('#loading').hide();
+                                $("#message").html(data);
+                            }
+                        });
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
