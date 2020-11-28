@@ -197,23 +197,20 @@
                 },
                 submitHandler: function (form) {
                     event.preventDefault();
-                    $(form).load("submit", function (e)// Trigger Submit When Validation Done
-                    {
-                        console.log('form', form);
-                        console.log('data', FormData);
-                        var data = new FormData(form);
-                        $.ajax({
-                            url: "email/contact.php",
-                            type: "POST",
-                            data: data,
-                            cache: false,
-                            contentType: false,
-                            processData: false,
-                            success: function (data) {
-                                $('#loading').hide();
-                                $("#message").html(data);
-                            }
-                        });
+                    console.log('form', form);
+                    console.log('data', FormData);
+                    var data = new FormData(form);
+                    $.ajax({
+                        url: "email/contact.php",
+                        type: "POST",
+                        data: data,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        success: function (data) {
+                            $('#loading').hide();
+                            $("#message").html(data);
+                        }
                     });
                 }
             });
