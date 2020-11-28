@@ -475,8 +475,8 @@ ol {
 	position: absolute;
 	left: 0;
 	top: 56px;
-	width: 150px;
-	background: #111111;
+	width: 200px;
+	background:rgb(0, 30, 60);
 	text-align: left;
 	padding: 5px 0;
 	z-index: 9;
@@ -495,9 +495,9 @@ ol {
 .header__menu ul li .dropdown li a {
 	font-size: 14px;
 	color: #ffffff;
-	font-weight: 400;
-	padding: 5px 20px;
-	text-transform: capitalize;
+	font-weight: bold;
+	padding: 15px 20px;
+	text-transform: uppercase;
 }
 
 .header__menu ul li .dropdown li a:after {
@@ -4133,12 +4133,15 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 
 .school ul li.title-holder {
 	position: relative;
-    padding: 35px 13.5% 0;
+	padding: 50px 13.5% 0;
+	text-align: center;
+	line-height: 30px;
 }
 .school ul li.prices-holder {
 	position: relative;
     padding-top: 15px;
     padding-bottom: 0;
+	text-align: center;
 }
 .school ul li.title-holder span.title {
 	display: block;
@@ -4149,18 +4152,19 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
     line-height: 1em;
     font-weight: 700;
     letter-spacing: .025em;
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 .school ul li.title-holder span.sub-title {
 	color: #e53637;
-	font-size: 16px;
-	font-weight: bold;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	position: relative;
-	-webkit-transition: all, 0.3s;
-	-o-transition: all, 0.3s;
-	transition: all, 0.3s;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    -webkit-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    transition: all, 0.3s;
+    font-family: 'Rajdhani', sans-serif;
 }
 .school ul li.prices-holder sup.value {
 	position: relative;
@@ -4185,9 +4189,14 @@ sup {
     font-weight: 600;
     color: #000;
 }
+.school ul li.duration-holder {
+	text-align: center;
+}
+
 .school ul li.button-holder {
 	padding-top: 24px;
-    padding-bottom: 60px;
+	padding-bottom: 60px;
+	text-align: center;
 }
 
 .slider-nav-bg {
