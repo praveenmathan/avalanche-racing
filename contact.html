@@ -44,7 +44,12 @@
                     <nav class="header__menu mobile-menu">
                         <ul>
                             <li><a href="./index.html">Home</a></li>
-                            <li><a href="academic.html">Academy</a></li>
+                            <li><a href="#">Academy</a>
+                                <ul class="dropdown">
+                                    <li><a href="academy.html">Racing</a></li>
+                                    <li><a href="karting-academy.html">Karting</a></li>
+                                </ul>
+                            </li>
                             <li><a href="join-us.html">Join Us</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="partners.html">Partners</a></li>
@@ -197,8 +202,6 @@
                 },
                 submitHandler: function (form) {
                     event.preventDefault();
-                    console.log('form', form);
-                    console.log('data', FormData);
                     var data = new FormData(form);
                     $.ajax({
                         url: "email/contact.php",
