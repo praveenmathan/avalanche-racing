@@ -62,10 +62,8 @@
                             <li><a href="partners.html">Partners</a></li>
                             <li><a href="team.html">Team</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href=""></a></li>
-                            <li><a
-                                    href="https://web.whatsapp.com/send?phone=919489010450&text=Hi I am chat form website"><img
-                                        src="img/whatsapp-logo.svg" class="whatsapp-image" /></a></li>
+
+                            <li><a href="#test-form" class="primary-btn enquiry-button popup-with-form">Enquire</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -290,6 +288,39 @@
     </section>
     <!-- Client Section End -->
 
+    <div class="whatsapp-wrapper">
+        <div class="whatsapp-content">
+            <a href="https://web.whatsapp.com/send?phone=919489010450&text=Hi I am chat form website"><img
+                    src="img/whatsapp-logo.svg" class="whatsapp-image" /></a>
+        </div>
+    </div>
+
+    <div class="contact__form white-popup-block mfp-hide" id="test-form">
+        <h2>Enquiry Form</h2>
+        <form method="post" class="" id="enquiry-form" novalidate="novalidate">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" name="name">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <input type="text" placeholder="Phone Number" name="phonenumber">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <textarea row="3" placeholder="Message" name="message"></textarea>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <input type="submit" name="submit" class="primary-btn" name="submit" />
+                </div>
+            </div>
+        </form>
+    </div>
+
     <!-- Footer Section Begin -->
     <footer class="footer-white">
         <div class="container">
@@ -334,6 +365,48 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function ($) {
+
+            $("#enquiry-form").validate({
+                rules: {
+                    name: "required",
+                    phonenumber: "required",
+                    message: "required"
+                },
+                messages: {
+                    name: "Please enter your Name",
+                    phonenumber: "Please enter your Number",
+                    message: "Please type your queries / message"
+                },
+                errorPlacement: function (error, element) {
+                    if (element.is(":radio")) {
+                        error.appendTo(element.parents('.form-group'));
+                    }
+                    else { // This is the default behavior 
+                        error.insertAfter(element);
+                    }
+                },
+                submitHandler: function (form) {
+                    event.preventDefault();
+                    var data = new FormData(form);
+                    $.ajax({
+                        url: "email/contact.php",
+                        type: "POST",
+                        data: data,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        success: function (data) {
+                            $('#loading').hide();
+                            $("#message").html(data);
+                        }
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
