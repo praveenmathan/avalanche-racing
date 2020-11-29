@@ -55,7 +55,8 @@
                             <li><a href="team.html">Team</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
 
-                            <li><a href="#test-form" class="primary-btn enquiry-button popup-with-form">Enquire</a></li>
+                            <li><a href="contact.html" class="primary-btn enquiry-button popup-with-form">Enquire</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -86,69 +87,102 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12">
                     <div class="contact__form">
-                        <form action="#">
+                        <form action="#" id="enrollment-form" novalidate="novalidate">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <input type="text" placeholder="First Name">
+                                    <div class="form-group">
+                                        <input type="text" name="firstname" placeholder="First Name">
+                                    </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="text" placeholder="Last Name">
+                                    <div class="form-group">
+                                        <input type="text" name="lastname" placeholder="Last Name">
+                                    </div>
+
                                 </div>
                                 <div class="col-lg-4">
-                                    <!-- <input type="text" placeholder="Category"> -->
-                                    <select name="category-list" placeholder="Category">
-                                        <option disabled selected>Category</option>
-                                        <option value="Racing">Racing</option>
-                                        <option value="karting">Karting</option>
-                                    </select>
+                                    <div class="form-group">
+                                        <!-- <input type="text" placeholder="Category"> -->
+                                        <select name="categorylist" placeholder="Category">
+                                            <option disabled selected>Category</option>
+                                            <option value="Racing">Racing</option>
+                                            <option value="karting">Karting</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <input type="text" placeholder="Mobile Number">
+                                    <div class="form-group">
+                                        <input type="text" name="phonenumber" placeholder="Phone Number">
+                                    </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <input type="text" placeholder="Email ID">
+                                    <div class="form-group">
+                                        <input type="text" name="email" placeholder="Email ID">
+                                    </div>
                                 </div>
                                 <div class="col-lg-12">
-                                    <input type="text" placeholder="Address">
+                                    <div class="form-group">
+                                        <input type="text" name="address" placeholder="Address">
+                                    </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <input type="text" placeholder="City">
+                                    <div class="form-group">
+                                        <input type="text" name="city" placeholder="City">
+                                    </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <input type="text" placeholder="State">
+                                    <div class="form-group">
+                                        <input type="text" name="state" placeholder="State">
+                                    </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <input type="text" placeholder="Nationality">
+                                    <div class="form-group">
+                                        <input type="text" name="nationality" placeholder="Nationality">
+                                    </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <!-- <input type="text" placeholder="First Timer"> -->
-                                    <select name="first-timer-list" placeholder="First Timer">
-                                        <option disabled selected>First Timer</option>
-                                        <option value="Yes">Yes</option>
-                                        <option value="No">No</option>
-                                    </select>
+                                    <div class="form-group">
+                                        <!-- <input type="text" placeholder="First Timer"> -->
+                                        <select name="firsttimerlist" placeholder="First Timer">
+                                            <option disabled selected>First Timer</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <input type="text" placeholder="Have Been Racing / Karting Since?">
+                                    <div class="form-group">
+                                        <input type="text" name="havebeentoracingorkarting"
+                                            placeholder="Have Been Racing / Karting Since?">
+                                    </div>
                                 </div>
                                 <div class="col-lg-4">
-                                    <input type="text" placeholder="No of Races Participated So Far?">
+                                    <div class="form-group">
+                                        <input type="text" name="noofracesparticipated"
+                                            placeholder="No of Races Participated So Far?">
+                                    </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="text" placeholder="Preferred Batch (Month)">
+                                    <div class="form-group">
+                                        <input type="text" name="Preferredbatch" placeholder="Preferred Batch (Month)">
+                                    </div>
                                 </div>
                                 <div class="col-lg-6">
-                                    <!-- <input type="text" placeholder="Interested To Take Part In Racing Championship"> -->
-                                    <select name="interested-list"
-                                        placeholder="Interested To Take Part In Racing Championship">
-                                        <option disabled selected>Interested To Take Part In Racing Championship
-                                        </option>
-                                        <option value="Yes">Yes</option>
-                                        <option value="No">No</option>
-                                    </select>
+                                    <div class="form-group">
+                                        <!-- <input type="text" placeholder="Interested To Take Part In Racing Championship"> -->
+                                        <select name="interestedlist"
+                                            placeholder="Interested To Take Part In Racing Championship">
+                                            <option disabled selected>Interested To Take Part In Racing Championship
+                                            </option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="col-lg-12">
-                                    <input type="button" class="primary-btn" value="Send Message" />
+                                    <div class="form-group">
+                                        <input type="submit" class="primary-btn" value="Enroll" />
+                                    </div>
                                 </div>
                             </div>
                         </form>
@@ -164,32 +198,6 @@
             <a href="https://web.whatsapp.com/send?phone=919489010450&text=Hi I am chat form website"><img
                     src="img/whatsapp-logo.svg" class="whatsapp-image" /></a>
         </div>
-    </div>
-
-    <div class="contact__form white-popup-block mfp-hide" id="test-form">
-        <h2>Enquiry Form</h2>
-        <form method="post" class="" id="enquiry-form" novalidate="novalidate">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="form-group">
-                        <input type="text" placeholder="Name" name="name">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="form-group">
-                        <input type="text" placeholder="Phone Number" name="phonenumber">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="form-group">
-                        <textarea row="3" placeholder="Message" name="message"></textarea>
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <input type="submit" name="submit" class="primary-btn" name="submit" />
-                </div>
-            </div>
-        </form>
     </div>
 
     <!-- Footer Section Begin -->
@@ -239,16 +247,38 @@
     <script>
         $(document).ready(function ($) {
 
-            $("#enquiry-form").validate({
+            $("#enrollment-form").validate({
                 rules: {
-                    name: "required",
+                    firstname: "required",
+                    lastname: "required",
+                    categorylist: "required",
                     phonenumber: "required",
-                    message: "required"
+                    email: "required",
+                    address: "required",
+                    city: "required",
+                    state: "required",
+                    nationality: "required",
+                    firsttimerlist: "required",
+                    havebeentoracingorkarting: "required",
+                    noofracesparticipated: "required",
+                    Preferredbatch: "required",
+                    interestedlist: "required"
                 },
                 messages: {
-                    name: "Please enter your Name",
-                    phonenumber: "Please enter your Number",
-                    message: "Please type your queries / message"
+                    firstname: "First Name Required",
+                    lastname: "Last Name Required",
+                    categorylist: "Category Required",
+                    phonenumber: "Phone Number Required",
+                    email: "Email Required",
+                    address: "Address Required",
+                    city: "City Required",
+                    state: "State Required",
+                    nationality: "Nationality Required",
+                    firsttimerlist: "Required",
+                    havebeentoracingorkarting: "Required",
+                    noofracesparticipated: "Required",
+                    Preferredbatch: "Month required",
+                    interestedlist: "Required"
                 },
                 errorPlacement: function (error, element) {
                     if (element.is(":radio")) {
