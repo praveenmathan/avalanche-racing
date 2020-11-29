@@ -4324,14 +4324,17 @@ sup {
 }
 .partners-bg {
 	background: url('../img/bg/partners-bg.jpg');
+	background-size: cover;
 }
 
 .gallery-bg {
 	background: url('../img/bg/gallery-bg.jpg');
+	background-size: cover;
 }
 
 .team-bg {
 	background: url('../img/bg/teams-bg.jpg');
+	background-size: cover;
 }
 
 .blue-bg {
