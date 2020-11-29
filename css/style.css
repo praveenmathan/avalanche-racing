@@ -4555,3 +4555,7 @@ table td {
 .mfp-close-btn-in .mfp-close {
     color: rgb(255, 255, 255);
 }
+
+.pt-0 {
+	padding-top: 0 !important;
+}
