@@ -4559,3 +4559,6 @@ table td {
 .pt-0 {
 	padding-top: 0 !important;
 }
+.video-bg-size {
+	background-size: contain;
+}
