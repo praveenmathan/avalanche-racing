@@ -101,13 +101,13 @@
         items: 1,
         dots: false,
         nav: true,
+        video: true,
+        lazyLoad: true,
         navText: ["<span class='arrow_left slider-nav-bg'><span/>", "<span class='arrow_right slider-nav-bg'><span/>"],
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
-        smartSpeed: 1200,
         autoHeight: false,
         autoWidth: false,
-        autoplay: true
     });
 
     /*-----------------------
