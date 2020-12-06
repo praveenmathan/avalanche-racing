@@ -456,17 +456,24 @@
                 submitHandler: function (form) {
                     event.preventDefault();
                     var data = new FormData(form);
+                    var formMessages = $('#form-messages');
                     $.ajax({
-                        url: "email/contact.php",
+                        url: "email/enquiry.php",
                         type: "POST",
                         data: data,
                         cache: false,
                         contentType: false,
-                        processData: false,
-                        success: function (data) {
-                            $('#loading').hide();
-                            $("#message").html(data);
-                        }
+                        processData: false
+                    }).done(function (response) {
+                        $(formMessages).removeClass('error-message');
+                        $(formMessages).addClass('success');
+                        $(formMessages).html(response);
+                        $('#enquiry-form')[0].reset();
+                    }).fail(function (xhr, status, error) {
+                        $(formMessages).removeClass('success');
+                        $(formMessages).addClass('error-message');
+                        var errorMessage = xhr.status + ': ' + xhr.statusText;
+                        $(formMessages).html(errorMessage);
                     });
                 }
             });

@@ -4562,3 +4562,15 @@ table td {
 .video-bg-size {
 	background-size: contain;
 }
+.success {
+	color: #fff;
+    border: 1px solid green;
+    padding: 5px;
+    background: green;
+}
+.error-message {
+	color: #fff;
+    border: 1px solid red;
+    padding: 5px;
+    background: red;
+}

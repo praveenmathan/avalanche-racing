@@ -9,7 +9,7 @@
             $message = $_POST['message'];
 
             $to = "contact@avalancheracing.in";
-            $subject = "Avalanche Motorsports - Contact Us ";
+            $subject = "Avalanche Motorsports - Enquiry Form";
             $header = "From:leads@avalancheracing.in \r\n";
             $header .= "MIME-Version: 1.0\r\n";
             $header .= "Content-type: text/html;charset=ISO-8859-1\r\n";
