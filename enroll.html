@@ -181,7 +181,12 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-group">
-                                        <input type="submit" class="primary-btn" value="Enroll" />
+                                        <input type="submit" name="submit" class="primary-btn" value="Enroll" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <div id="form-messages"></div>
                                     </div>
                                 </div>
                             </div>
@@ -206,7 +211,7 @@
             <div class="row">
                 <div class="col-lg-4 text-right" style="border-right: 1px solid #333;">
                     <div class="">
-                        <img src="img/logo-footer.png" alt="" />
+                        <img src="img/white-logo.png" alt="" />
                     </div>
                 </div>
                 <div class="col-lg-4 text-center" style="border-right: 1px solid #333;">
@@ -216,9 +221,9 @@
                 </div>
                 <div class="col-lg-4 text-left" style="margin:auto">
                     <div class="hero__social">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-whatsapp"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/avalancheracing/"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/user/JKTyreMotorsport"><i class="fa fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/avalanchemotorsports/"><i class="fa fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -291,17 +296,24 @@
                 submitHandler: function (form) {
                     event.preventDefault();
                     var data = new FormData(form);
+                    var formMessages = $('#form-messages');
                     $.ajax({
-                        url: "email/contact.php",
+                        url: "email/enroll.php",
                         type: "POST",
                         data: data,
                         cache: false,
                         contentType: false,
-                        processData: false,
-                        success: function (data) {
-                            $('#loading').hide();
-                            $("#message").html(data);
-                        }
+                        processData: false
+                    }).done(function (response) {
+                        $(formMessages).removeClass('error-message');
+                        $(formMessages).addClass('success');
+                        $(formMessages).html(response);
+                        $('#enrollment-form')[0].reset();
+                    }).fail(function (xhr, status, error) {
+                        $(formMessages).removeClass('success');
+                        $(formMessages).addClass('error-message');
+                        var errorMessage = xhr.status + ': ' + xhr.statusText;
+                        $(formMessages).html(errorMessage);
                     });
                 }
             });

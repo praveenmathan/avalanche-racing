@@ -132,7 +132,7 @@
         loop: true,
         margin: 20,
         items: 4,
-        dots: true,
+        dots: false,
         nav: true,
         navText: ["<span class='arrow_left slider-nav-bg'><span/>", "<span class='arrow_right slider-nav-bg'><span/>"],
         animateOut: 'fadeOut',
@@ -140,7 +140,24 @@
         smartSpeed: 1200,
         autoHeight: false,
         autoWidth: false,
-        autoplay: true
+        autoplay: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false,
+                dots: true
+            },
+            600: {
+                items: 3,
+                nav: false
+            },
+            1000: {
+                items: 4,
+                nav: true,
+                loop: false
+            }
+        }
     });
 
     /*--------------------------

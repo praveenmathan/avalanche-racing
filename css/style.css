@@ -620,6 +620,10 @@ ol {
 	padding-top: 480px;
 }
 
+.hero__items_video {
+	height: 700px;
+}
+
 .hero__text h6 {
 	color: #e53637;
 	font-size: 14px;
@@ -3576,6 +3580,12 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 /* Wide Mobile = 480px */
 
 @media only screen and (max-width: 767px) {
+	.table-resp  {
+		overflow: auto;
+	}
+	.header__logo a img {
+		max-width: 80%;
+	}
 	.canvas__open {
 		display: block;
 		font-size: 22px;
@@ -3779,7 +3789,11 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 	}
 	.hero__slider.owl-carousel .owl-nav button {
 		left: 15px;
-		top: 80%;
+		top: 90%;
+	}
+	.testimonial__text__center {
+		text-align: center;
+		padding: 10px 40px 60px;
 	}
 	.hero__slider.owl-carousel .owl-nav button.owl-next {
 		left: 75px;
@@ -3905,7 +3919,11 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 		margin-bottom: 40px;
 	}
 	.hero__social {
-		margin-top: 180px;
+		margin-top: 20px;
+		text-align: center;
+	}
+	.driver__slider.owl-carousel .owl-nav {
+		display: none !important;
 	}
 }
 
@@ -3921,11 +3939,11 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 		padding-bottom: 40px;
 	}
 	.hero__text h2 {
-		font-size: 36px;
-		line-height: 48px;
+		font-size: 25px;
+    	line-height: 30px;
 	}
 	.hero__social {
-		margin-top: 145px;
+		text-align: center;
 	}
 	.categories__deal__countdown .categories__deal__countdown__timer {
 		margin-left: 0;
@@ -3967,7 +3985,9 @@ box-shadow: 0px 12px 18px 10px rgba(0,0,0,0.1);
 
 .play-video-wrapper {
 	padding: 10%;
-    background: #fff;
+	background: #fff;
+	display: flex;
+    justify-content: center;
 }
 
 .play-video-wrapper h6 {
@@ -4484,7 +4504,7 @@ table td {
 }
 
 .driver__slider.owl-carousel .owl-nav {
-	display: block !important;
+	display: block;
 }
 
 .driver__slider.owl-carousel .owl-nav button {
@@ -4573,4 +4593,7 @@ table td {
     border: 1px solid red;
     padding: 5px;
     background: red;
+}
+.fb-page {
+	
 }
